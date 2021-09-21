@@ -1,0 +1,30 @@
+//utils
+
+@import "./utils/mixins";
+@import "./utils/variables";
+
+//Base
+
+@import "./base/base";
+@import "./base/typo";
+
+//Components
+
+@import "./components/btn";
+@import "./components/carte-menu";
+@import "./components/checkanim";
+
+//Layout
+
+@import "./layout/accueil";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/restaurants";
+
+//Pages
+@import "./pages/accueil";
+@import "./pages/délice-des-sens";
+@import "./pages/note-enchantée";
+@import "./pages/palette-du-goût";
+@import "./pages/à-la-française";
+

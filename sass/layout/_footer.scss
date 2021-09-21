@@ -1,0 +1,26 @@
+footer {
+    padding-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.651);
+
+    ul {
+        color: white;
+        line-height: 1.5rem;
+
+        i {
+            padding-right: 1rem;
+            font-size: .8rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.footer__logo {
+    filter: invert(100%);
+    width: 6.5rem;
+    margin-left: 2.3rem;
+    margin-top: 1.5rem;
+}

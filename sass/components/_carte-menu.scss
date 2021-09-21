@@ -1,0 +1,39 @@
+.menu__carte {
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: space-between;
+    width: auto;
+    margin-bottom: 1rem;
+    
+
+    .menu__carte__txt {
+        flex: 1;
+        padding-left: .5rem;
+        min-width: 0;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.76);
+            font-size: 16px;
+            margin-top: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .menu__prix {
+        align-self: flex-end;
+        margin-right: .2rem;
+        padding-right: 1rem;
+        font-weight: bold;
+
+    }
+}
+
