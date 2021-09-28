@@ -1,0 +1,13 @@
+.fas.fa-heart {
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
+    }
+}
+

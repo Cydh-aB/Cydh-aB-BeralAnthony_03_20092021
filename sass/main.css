@@ -52,6 +52,7 @@ button:hover {
           justify-content: space-between;
   width: auto;
   margin-bottom: 1rem;
+  max-width: 325px;
 }
 
 .menu__carte .menu__carte__txt {
@@ -65,6 +66,8 @@ button:hover {
 .menu__carte .menu__carte__txt h3 {
   font-size: 18px;
   margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__carte .menu__carte__txt p {
@@ -81,6 +84,64 @@ button:hover {
   margin-right: .2rem;
   padding-right: 1rem;
   font-weight: bold;
+}
+
+.menu__carte:hover .menu__carte__check {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-left: 50px;
+}
+
+.menu__carte:hover .menu__carte__check i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.menu__carte__check {
+  width: 65px;
+  background: #99e2d0;
+  font-size: 30px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -60px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.menu__carte__check i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.5sec ease;
+  transition: 0.5sec ease;
+}
+
+.fas.fa-heart {
+  opacity: 0;
+}
+
+.fas.fa-heart:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 body {

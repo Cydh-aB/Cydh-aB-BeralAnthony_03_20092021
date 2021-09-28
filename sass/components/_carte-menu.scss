@@ -7,16 +7,21 @@
     justify-content: space-between;
     width: auto;
     margin-bottom: 1rem;
+    max-width: 325px;
     
 
     .menu__carte__txt {
         flex: 1;
         padding-left: .5rem;
         min-width: 0;
+        
+        
 
         h3 {
             font-size: 18px;
             margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         p {
@@ -33,7 +38,41 @@
         margin-right: .2rem;
         padding-right: 1rem;
         font-weight: bold;
+    }
 
+}
+
+.menu__carte:hover .menu__carte__check {
+    transform: translateX(-60px);
+    transition: 0.5s ease-in-out;
+    margin-left: 50px;
+
+    i {
+        transform: rotate(0deg);
+        transition: 0.7s ease;
     }
 }
 
+.menu__carte__check {
+    width: 65px;
+    background: $color-tertiary;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -60px;
+    transition: all 0.5s ease;
+    transform: translateX(60px);
+    transition-duration: 0.5s;
+
+    i {
+        transform: rotate(90deg);
+        transition: 0.5sec ease;
+    }
+    
+}
+
+
+ 
+  

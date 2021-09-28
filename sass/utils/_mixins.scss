@@ -1,3 +1,10 @@
 @mixin carte-menu {
     box-shadow: 0px 3px 5px 5px #dbdbdb;
 }
+
+@mixin img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15rem;
+}
