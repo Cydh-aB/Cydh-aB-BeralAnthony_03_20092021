@@ -11,7 +11,6 @@ ul {
 }
 
 i {
-  font-family: fontawesome !important;
   font-style: normal;
 }
 
@@ -29,8 +28,8 @@ button {
   color: white;
   border-radius: 2rem;
   font-weight: bold;
-  -webkit-transition-duration: 1sec;
-          transition-duration: 1sec;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 button:hover {
@@ -52,7 +51,7 @@ button:hover {
           justify-content: space-between;
   width: auto;
   margin-bottom: 1rem;
-  max-width: 325px;
+  max-width: 365px;
 }
 
 .menu__carte .menu__carte__txt {
@@ -127,8 +126,8 @@ button:hover {
 .menu__carte__check i {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: 0.5sec ease;
-  transition: 0.5sec ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .fas.fa-heart {
@@ -142,6 +141,32 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-animation: popin 0.5s ease both;
+          animation: popin 0.5s ease both;
+}
+
+@-webkit-keyframes popin {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@keyframes popin {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 
 body {
@@ -456,6 +481,7 @@ main .restaurant {
   top: 4%;
   font-size: 1.6rem;
   color: grey;
+  cursor: pointer;
 }
 
 .menu h1 {

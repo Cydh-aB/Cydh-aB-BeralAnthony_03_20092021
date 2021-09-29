@@ -1,5 +1,6 @@
 .fas.fa-heart {
     opacity: 0;
+    
 
     &:hover {
         opacity: 1;
@@ -7,7 +8,21 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        animation: popin 0.5s ease both;
         
+
+            @-webkit-keyframes popin {
+            0% { opacity: 0; -webkit-transform: scale(0); }
+            100% { opacity: 1; -webkit-transform: scale(1.05); }
+            }
+            @-moz-keyframes popin {
+            0% { opacity: 0; -moz-transform: scale(0); }
+            100% { opacity: 1; -moz-transform: scale(1.05); }
+            }
+            @keyframes popin {
+            0% { opacity: 0; transform: scale(0); }
+            100% { opacity: 1; transform: scale(1.05); }
+            }
     }
 }
 
