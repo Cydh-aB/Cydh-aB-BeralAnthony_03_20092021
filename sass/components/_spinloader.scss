@@ -18,6 +18,16 @@
     100% { opacity: 0;}
 }
 
+@-moz-keyframes fadeout-loader {
+    0% { opacity: 0.90;}
+    100% { opacity: 0;}
+}
+
+@-webkit-keyframes fadeout-loader {
+    0% { opacity: 0.90;}
+    100% { opacity: 0;}
+}
+
 .spinloader {
     border: 10px solid transparent;
     border-top: 10px solid $color-primary;
@@ -31,10 +41,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    -webkit-animation: spin 2.5s linear infinite;
-    -o-animation: spin 2.5s linear infinite;
-    -moz-animation: spin 2.5s linear infinite;
-    animation: spin 2.5s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+    -o-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
 
@@ -52,7 +62,6 @@
     right: 0;
     bottom: 0;
     -webkit-animation: spin 3s reverse 5;
-    -o-animation: spin 3s reverse 5;
     -moz-animation: spin 3s reverse 5;
     animation: spin 3s reverse 5;
 }
@@ -69,12 +78,26 @@
     
 }
 
-@keyframes spin-reverse {
+@-moz-keyframes spin {
     0% { 
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
+        background: transparent; 
     }
     100%{
         transform: rotate(360deg);
+        background: transparent;
+    }
+    
+}
+
+@-webkit-keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+        background: transparent; 
+    }
+    100%{
+        transform: rotate(360deg);
+        background: transparent;
     }
     
 }

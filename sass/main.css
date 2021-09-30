@@ -130,21 +130,24 @@ button:hover {
   transition: 0.5s ease;
 }
 
-.fas.fa-heart {
-  opacity: 0;
-}
-
-.fas.fa-heart:hover {
-  opacity: 1;
+.fa-heart.fas {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
-  -webkit-animation: popin 0.5s ease forwards;
-          animation: popin 0.5s ease forwards;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: popin 0.5s ease both;
+          animation: popin 0.5s ease both;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  z-index: 1;
+}
+
+.fa-heart.far:hover ~ .fa-heart.fas, .fa-heart.fas:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 @-webkit-keyframes popin {
@@ -192,7 +195,7 @@ button:hover {
   z-index: 2;
 }
 
-@-webkit-keyframes fadeout-loader {
+@keyframes fadeout-loader {
   0% {
     opacity: 0.90;
   }
@@ -201,7 +204,7 @@ button:hover {
   }
 }
 
-@keyframes fadeout-loader {
+@-webkit-keyframes fadeout-loader {
   0% {
     opacity: 0.90;
   }
@@ -223,8 +226,8 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-animation: spin 2.5s linear infinite;
-  animation: spin 2.5s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 .spinloader2 {
@@ -244,19 +247,6 @@ button:hover {
   animation: spin 3s reverse 5;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    background: transparent;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    background: transparent;
-  }
-}
-
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -270,25 +260,16 @@ button:hover {
   }
 }
 
-@-webkit-keyframes spin-reverse {
+@-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    background: transparent;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-
-@keyframes spin-reverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    background: transparent;
   }
 }
 
