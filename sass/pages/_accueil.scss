@@ -1,16 +1,25 @@
 .accueil {
     .localisation {
         display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgba(231, 231, 231, 0.932);
-        padding-left: 7.5rem;
+
+        p {
+            font-weight: bold;
+        }
 
         i{
             display: inline-block;
             font-size: 20px;
-            padding-top: .8rem;
             padding-right: 1rem;
+            padding-bottom: .3rem;
         }
     }
+}
+
+h1 {
+    font-size: 1.4rem;
 }
 
 .accueil__fonctionnement {
