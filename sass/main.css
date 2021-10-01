@@ -84,8 +84,6 @@ button:hover {
   margin-bottom: 3.5rem;
   margin-top: 3rem;
   font-size: 16px;
-  margin-right: 3rem;
-  margin-left: 4rem;
   height: 3.6rem;
   width: 215px;
 }
@@ -103,7 +101,6 @@ button:hover {
           justify-content: space-between;
   width: auto;
   margin-bottom: 1rem;
-  max-width: 365px;
   -webkit-animation: slideup 1s ease both;
           animation: slideup 1s ease both;
 }
@@ -397,7 +394,7 @@ header {
 }
 
 .logo {
-  width: 13rem;
+  width: 10rem;
   margin-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
@@ -408,22 +405,23 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 #header__restaurant a {
+  position: absolute;
+  left: 1%;
   padding-left: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: black;
 }
 
 #header__restaurant .logo {
-  padding-right: 5.5rem;
   margin-left: 0;
 }
 
@@ -558,6 +556,7 @@ main .restaurant {
 
 /** Tablette **/
 @media screen and (min-width: 700px) and (max-width: 992px) {
+  /**Index**/
   .accueil {
     display: -ms-grid;
     display: grid;
@@ -632,6 +631,21 @@ main .restaurant {
     grid-row: 3;
     -ms-grid-column: 2;
     grid-column: 2;
+  }
+  /**Page menu **/
+  .menu {
+    margin-left: 20%;
+    margin-right: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__carte {
+    max-width: 400px;
+    width: 400px;
   }
   footer {
     display: -webkit-box;
@@ -795,7 +809,7 @@ h1 {
 .menu .fa-heart {
   position: absolute;
   right: 10%;
-  top: 4%;
+  top: 2.9%;
   font-size: 1.6rem;
   color: grey;
   cursor: pointer;
@@ -827,6 +841,7 @@ h1 {
 }
 
 .menu a {
+  display: block;
   text-decoration: none;
   text-align: center;
   margin-bottom: 3rem;

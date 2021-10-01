@@ -1,6 +1,9 @@
 /** Tablette **/ 
     
 @media screen and (min-width: 700px) and (max-width: 992px) {
+
+    /**Index**/
+
     .accueil {
         display:grid;
         grid-template-columns: repeat(2, 3fr);
@@ -65,6 +68,20 @@
         .grid__delice {
             grid-row: 3;
             grid-column: 2;
+        }
+    }
+
+    /**Page menu **/
+
+    .menu {
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: center;
+        align-items: center;
+
+        &__carte {
+            max-width: 400px;
+            width: 400px;
         }
     }
 
