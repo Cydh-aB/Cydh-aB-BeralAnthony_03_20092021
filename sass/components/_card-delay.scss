@@ -1,0 +1,14 @@
+.menu__carte.menu__anim__delay {
+    
+    &-1 {
+        animation-delay: calc(0.1s * 1);
+    }
+
+    &-2 {
+        animation-delay: calc(0.1s * 2);
+    }
+
+    &-3 {
+        animation-delay: calc(0.1s * 3);
+    }
+}

@@ -2,6 +2,7 @@
 
 @import "./utils/mixins";
 @import "./utils/variables";
+@import "./utils/keyframe";
 
 //Base
 
@@ -15,6 +16,7 @@
 @import "./components/checkanim";
 @import "./components/petit-coeur";
 @import "./components/spinloader";
+@import "./components/card-delay";
 
 //Layout
 
