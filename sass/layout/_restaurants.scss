@@ -6,6 +6,14 @@ main {
     }
 }
 
+.restaurant__titre {
+    margin-left: 1rem;
+
+    @media screen and (min-width: 700px){
+        margin-left: 0;
+    }
+}
+
 .restaurant__card {
     border-radius: 20px;
     margin-bottom: 1.5rem;
