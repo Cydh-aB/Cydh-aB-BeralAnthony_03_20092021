@@ -505,7 +505,6 @@ main .restaurant {
 .restaurant__description i {
   -ms-grid-column: 2;
   grid-column: 2;
-  font-weight: none;
   color: rgba(31, 30, 30, 0.705);
   -ms-grid-row: 1;
   grid-row: 1;
@@ -827,7 +826,7 @@ h1 {
 
 .accueil__liste li p {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   padding-top: .5rem;
   padding-left: 1rem;
 }
