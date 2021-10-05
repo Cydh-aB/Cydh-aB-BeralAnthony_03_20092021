@@ -5,16 +5,19 @@
     white-space: nowrap;
     overflow: hidden;
     justify-content: space-between;
-    width: auto;
+    width: 345px;
     margin-bottom: 1rem;
     animation: slideup 1s ease both;
+
+    @keyframes slideup {
+        0% { transform: translateY(20px); opacity: 0;}
+        100% { transform: translateY(0); opacity: 1;}
+    }
 
     .menu__carte__txt {
         flex: 1;
         padding-left: .5rem;
         min-width: 0;
-        
-        
 
         h3 {
             font-size: 18px;
@@ -40,6 +43,8 @@
     }
 
 }
+
+/**Carte check**/
 
 .menu__carte:hover .menu__carte__check {
     transform: translateX(-60px);

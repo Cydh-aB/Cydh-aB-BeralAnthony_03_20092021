@@ -1,0 +1,35 @@
+.palette__img{
+    @include accueil__restaurant__img;
+    background-position-y: -3.9rem;
+    border-radius: 20px 20px 0 0;
+    background-image: url("../images/restaurants/palettegout.jpg");
+}
+
+.note__img {
+    @include accueil__restaurant__img;
+    background-position-y: -10.1rem;
+    border-radius: 20px 20px 0 0;
+    background-image: url("../images/restaurants/noteenchantee.jpg");
+}
+
+.francaise__img {
+    @include accueil__restaurant__img;
+    background-position-y: -3.6rem;
+    border-radius: 20px 20px 0 0;
+    background-image: url("../images/restaurants/francaise.jpg");
+}
+
+.delice__img {
+    @include accueil__restaurant__img;
+    background-position-y: -4rem;
+    border-radius: 20px 20px 0 0;
+    background-image: url("../images/restaurants/delice.jpg");
+}
+
+.img__restaurant {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center;
+}

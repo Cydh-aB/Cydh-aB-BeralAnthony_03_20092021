@@ -2,7 +2,6 @@
 
 @import "./utils/mixins";
 @import "./utils/variables";
-@import "./utils/keyframe";
 
 //Base
 
@@ -13,10 +12,10 @@
 
 @import "./components/btn";
 @import "./components/carte-menu";
-@import "./components/checkanim";
 @import "./components/petit-coeur";
 @import "./components/spinloader";
 @import "./components/card-delay";
+@import "./components/img";
 
 //Layout
 
@@ -28,8 +27,5 @@
 
 //Pages
 @import "./pages/accueil";
-@import "./pages/délice-des-sens";
-@import "./pages/note-enchantée";
-@import "./pages/palette-du-goût";
-@import "./pages/à-la-française";
+@import "./pages/menu";
 

@@ -131,8 +131,14 @@
 
     /**menu**/
 
-    .titre__menu {
+    .menu__titre {
         width: 100%;
+        text-align: center;
+    }
+
+    .menu .fa-heart {
+        right: 35%;
+        top: 6%;
     }
 
     .menu__carte {

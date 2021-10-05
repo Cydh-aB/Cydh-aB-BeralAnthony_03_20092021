@@ -1,3 +1,5 @@
+/** Restaurants - Accueil **/
+
 main {
     background-color: rgba(206, 201, 201, 0.301);
 
@@ -72,50 +74,4 @@ main {
     }
 }
 
-.palette__img{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -3.9rem;
-    border-radius: 20px 20px 0 0;
-    height: 11rem;
-    background-image: url("../images/restaurants/palettegout.jpg");
-}
 
-.note__img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: -10.1rem;
-    border-radius: 20px 20px 0 0;
-    height: 11rem;
-    background-image: url("../images/restaurants/noteenchantee.jpg");
-}
-
-.francaise__img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: -3.6rem;
-    border-radius: 20px 20px 0 0;
-    height: 11rem;
-    background-image: url("../images/restaurants/francaise.jpg");
-}
-
-.delice__img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: -4rem;
-    border-radius: 20px 20px 0 0;
-    height: 11rem;
-    background-image: url("../images/restaurants/delice.jpg");
-}
-
-.img__restaurant {
-    width: 100%;
-    height: auto;
-    max-height: 280px;
-    object-fit: cover;
-    object-position: center;
-}
