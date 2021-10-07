@@ -32,8 +32,10 @@
 
     <section class="accueil">
         <div class="localisation">
-            <i class="fas fa-map-marker-alt"></i> 
-            <p>Paris, Bellevile</p>    
+            <div class="localisation__box">
+                <i class="fas fa-map-marker-alt"></i> 
+                <input type="text" value="Paris, Belleville">
+            </div>   
         </div>
         
         <div class="accueil__texte">
@@ -43,12 +45,12 @@
                 <button class="accueil__explorer">Explorez nos restaurants</button>
             </div>
             <section class="fonctionnement">
-                <h2 class="accueil__fonctionnement">Fonctionnement</h2>
-                <ul class="accueil__liste">
-                    <li><p><span class="liste__nbr">1</span><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</p></li>
-                    <li><p><span class="liste__nbr">2</span><i class="fas fa-list-ul"></i>Composez votre menu</p></li>
-                    <li class="color-purple"><p><span class="liste__nbr">3</span><i class="purple fas fa-store"></i>Dégustez au restaurant</p></li>
-                </ul>
+                <h2 class="fonctionnement__titre">Fonctionnement</h2>
+                <div class="fonctionnement__explications">
+                    <div class="explications__carte"><div class="liste__nbr">1</div><p><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</p></div>
+                    <div class="explications__carte"><div class="liste__nbr">2</div><p><i class="fas fa-list-ul"></i>Composez votre menu</p></div>
+                    <div class="explications__carte"><div class="liste__nbr">3</div><p><i class="purple fas fa-store"></i>Dégustez au restaurant</p></div>
+                </div>
             </section>
         </div>
     </section>

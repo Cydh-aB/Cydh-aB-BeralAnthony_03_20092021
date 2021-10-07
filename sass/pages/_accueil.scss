@@ -1,12 +1,20 @@
 .accueil {
     .localisation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: rgba(231, 231, 231, 0.932);
 
-        p {
+        &__box {
+            text-align: center;
+            padding-left: 4rem;
+        }
+
+        input {
             font-weight: bold;
+            background: transparent;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
         }
 
         i{
@@ -66,35 +74,58 @@ h1 {
     }
 }
 
-.accueil__liste {
+.fonctionnement__explications {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 
-    li {
-        margin-bottom: 2rem;
-        margin-right: 2rem;
-        padding-right: 2rem;
-        width: 280px;
-        height: 4rem;
-        border-radius: 1rem;
-        box-shadow: 0px 3px 5px 5px rgb(236, 234, 234);
-        
-        i {
-            color: grey;
-            margin-right: 1.5rem;
-            margin-left: 1rem;
-            font-size: 1.1rem;
-        }
-
-        p {
-            font-weight: 600;
-            font-size: 16px;
-            padding-top: .5rem;
-            padding-left: 1rem;
-        }
+    i {
+        filter: opacity(50%);
+        font-size: 1.1rem;
     }
+
+    p {
+        font-weight: 600;
+        font-size: 15px;
+        padding-left: 20px;
+    }
+}
+
+.explications__carte {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 310px;
+    height: 70px;
+    margin-bottom: 25px;
+    border-radius: 24px;
+    box-shadow: 0.25rem 0.25rem 10px #e4e4e4;
+    background: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &::after, &::before {
+        margin: 0;
+        padding: 0
+    }
+
+    i {
+        width: 20px;
+        margin: 0 20px 0 25px;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: #b382ee2f;
+        cursor: pointer;
+    }
+}
+
+.explications__carte:hover i {
+    filter: opacity(100%);
+    color: $color-primary;
 }
 
 .liste__nbr{
@@ -107,23 +138,15 @@ h1 {
     width: 20px;
     height: 20px;
     position: absolute;
-    left: 2rem;
+    left: -10px;
+    
 
-    @media screen and (min-width: 700px) and (max-width: 992px) {
+}
 
-        left: 55%;
+li {
+    &:hover {
+        filter: opacity(100%);
+        background-color: #b382ee3a;
+        cursor: pointer;
     }
-
-    @media screen and (min-width: 992px) {
-        left: 60%;
-    }
 }
-
-.color-purple {
-    background-color: #b382ee3a;
-}
-
-.purple {
-    color: #9356DC !important;
-}
-
