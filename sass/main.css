@@ -633,6 +633,9 @@ main .restaurant {
         -ms-flex-align: center;
             align-items: center;
   }
+  .menu h1 {
+    text-align: center;
+  }
   .menu__carte {
     max-width: 400px;
     width: 400px;
@@ -688,13 +691,9 @@ main .restaurant {
     padding-bottom: 3rem;
   }
   /**menu**/
-  .menu__titre {
+  .menu h1 {
     width: 100%;
     text-align: center;
-  }
-  .menu .fa-heart {
-    right: 35%;
-    top: 6%;
   }
   .menu__carte {
     width: 460px;
@@ -915,6 +914,12 @@ li:hover {
 @media screen and (min-width: 1200px) {
   .menu .fa-heart {
     right: 35%;
+    top: 3.8%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .menu .fa-heart {
     top: 6%;
   }
 }
@@ -923,6 +928,7 @@ li:hover {
   font-family: 'Shrikhand', sans-serif;
   font-size: 27px;
   font-weight: 300;
+  width: 100%;
 }
 
 .menu h2 {

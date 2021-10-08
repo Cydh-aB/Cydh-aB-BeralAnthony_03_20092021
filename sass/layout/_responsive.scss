@@ -67,6 +67,10 @@
         justify-content: center;
         align-items: center;
 
+        h1 {
+            text-align: center;
+        }
+
         &__carte {
             max-width: 400px;
             width: 400px;
@@ -127,14 +131,9 @@
 
     /**menu**/
 
-    .menu__titre {
+    .menu h1 {
         width: 100%;
         text-align: center;
-    }
-
-    .menu .fa-heart {
-        right: 35%;
-        top: 6%;
     }
 
     .menu__carte {
