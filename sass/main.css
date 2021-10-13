@@ -620,7 +620,6 @@ main .restaurant {
   #restaurant {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
@@ -717,7 +716,6 @@ main .restaurant {
   #restaurant {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     margin-right: 7rem;
     margin-left: 7rem;
