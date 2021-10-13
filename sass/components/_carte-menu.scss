@@ -14,6 +14,14 @@
         100% { transform: translateY(0); opacity: 1;}
     }
 
+    @media screen and (max-width:360px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width:320px) {
+        width: 270px;
+    }
+
     .menu__carte__txt {
         flex: 1;
         padding-left: .5rem;
@@ -71,7 +79,7 @@
     transition-duration: 0.5s;
 
     i {
-        transform: rotate(90deg);
+        transform: rotate(260deg);
         transition: 0.5s ease;
     }
     

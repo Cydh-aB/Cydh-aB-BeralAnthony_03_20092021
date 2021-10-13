@@ -60,6 +60,25 @@ button:hover {
   font-size: 16px;
   height: 3.6rem;
   width: 215px;
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 360px) {
+  .btn__command {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn__command {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn__command {
+    margin-left: 8rem;
+  }
 }
 
 .menu__carte {
@@ -102,6 +121,18 @@ button:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu__carte {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu__carte {
+    width: 270px;
   }
 }
 
@@ -176,8 +207,8 @@ button:hover {
 }
 
 .menu__carte__check i {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(260deg);
+          transform: rotate(260deg);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -639,6 +670,9 @@ main .restaurant {
   .menu__carte {
     max-width: 400px;
     width: 400px;
+  }
+  .btn__command {
+    margin-left: 5.7rem;
   }
   /**footer**/
   footer {
